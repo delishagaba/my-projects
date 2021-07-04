@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>session 24</title>
+ <style>
+        body{
+            background-color:skyblue;
+            text-align: center;
+        } 
+        h1{
+            color:white;
+        }   
+ </style>
+
+</head>
+    
+ <body>
+        <header>Javascript Test  </header>
+        <input type="text" name="" id="MN1">
+        <input type="text" name="" id="MN2">
+        <button onclick="add()">Calculate</button>
+        <button onclick="subtract()" > Mix it up</button>
+         <h2>Result</h2>
+         <h2 id="Result"></h2>
+ </body>
+ <script>
+ function add(){
+     var MN1=document.getElementById("MN1").value;
+     var MN2=document.getElementById("MN2").value;
+     var add=parseInt(MN1) + parseInt(MN2);
+     document.getElementById("Result").innerText =add;
+ }
+ function subtract(){
+     var MN1=document.getElementById("MN1").value;
+     var MN2=document.getElementById("MN2").value;
+     var sub=parseInt(MN1) - parseInt(MN2);
+     document.getElementById("Result").innerText =sub;
+ }
+ </script>
+    
+</head>
+<body>
+    
+</body>
+</html>
